@@ -1,0 +1,94 @@
+body{
+    background-color: rgb(58, 172, 172);
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    color: blue;
+}
+.todo{
+    max-width: 600px;
+    background-color: rgb(100, 150, 200);
+    padding: 20px 30px 50px;
+    margin: 120px auto 5px;
+    border-radius: 15px;
+}
+form{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+input[type="text"]{
+    width: 70%;
+    padding: 20px;
+    border: 2px solid blue;
+    border-radius: 15px;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+.btn, .search{
+    background-color: blue;
+    border: none;
+    color: black;
+    color: aliceblue;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+ul li{
+    list-style-type: none;
+    display: flex;
+    font-size: 1.1rem;
+    padding:10px 6px 10px 30px ;
+    cursor: pointer;
+    position: relative;
+}
+.btn:hover {
+    background-color: green;
+    color: black;
+}
+ul li::before{
+    content: "☐";
+    font-size: 30px;
+    position: absolute;
+    left: -1px;
+    bottom: 4px;
+}
+
+#task-list{
+    padding: 0px 30px;
+}
+
+ul li.checked{
+    color: white;
+    background-color: green;
+    
+}
+
+ul li.checked::before{
+    content: "☑";
+    color: white;
+}
+
+ul li span{
+    position: absolute;
+    display: flex;
+    top: 1.8px;
+    right: 10px;
+    color: black;
+    font-size: 2rem;    
+}
+
+.edit-btn{
+    margin-right: 10%;
+    font-size: 2rem;
+}
+
+.search:hover{
+    background-color: green;
+    color: black;
+}
+
